@@ -1,8 +1,15 @@
 function Projects() {
   return (
-    <div>
-      <h1>Projects Page</h1>
-      <p>This is the projects page content.</p>
+    <div className="bg-dark text-light py-4 mb-2 rounded">
+      <h1 className="mx-4 mb-2 pb-4">
+        <i className="fa-solid fa-home me-2"></i> Home Page
+      </h1>
+
+      <pre className="mx-4 fs-5">
+        <i class="fa-solid fa-circle-info text-info"></i> Data here is currently unavailable.
+        Till then visit 👉🏻 <a className="text-decoration-none text-light" href="/profile"><strong>Profile</strong></a>
+      </pre>
+
     </div>
   );
 }
