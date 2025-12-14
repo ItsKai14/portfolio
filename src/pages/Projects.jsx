@@ -1,6 +1,8 @@
+
 function Projects() {
   return (
-    <div className="bg-dark text-light py-4 mb-2 rounded">
+    <>
+      <div className="bg-dark text-light py-4 mb-2 rounded">
       <h1 className="mx-4 mb-2 pb-4">
         <i className="fa-solid fa-code me-2"></i> Project Page
       </h1>
@@ -11,6 +13,7 @@ function Projects() {
       </pre>
 
     </div>
+    </>
   );
 }
 
