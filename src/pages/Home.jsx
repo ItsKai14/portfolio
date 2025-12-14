@@ -1,3 +1,5 @@
+import { Link as LINK } from 'react-router-dom';
+
 function Home () {
     return (
         <>
@@ -8,7 +10,7 @@ function Home () {
 
                 <pre className="mx-4 text-wrap fs-5">
                     <i class="fa-solid fa-circle-info text-info"></i> Data here is currently unavailable. 
-                    Till then visit 👉🏻 <a className="text-decoration-none text-light" href="/profile"><strong>Profile</strong></a>
+                    Till then visit 👉🏻 <LINK><strong>Profile</strong></LINK>
                 </pre>
 
             </div>
