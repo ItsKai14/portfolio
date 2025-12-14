@@ -10,7 +10,7 @@ function About () {
 
                 <pre className="temp mx-4 text-wrap fs-5">
                     <i class="fa-solid fa-circle-info text-info"></i> Data here is currently unavailable.
-                    Till then visit 👉🏻 <LINK><strong>Profile</strong></LINK>
+                    Till then visit 👉🏻 <LINK to={'/profile'} className='text-light text-decoration-none'><strong>Profile</strong></LINK>
                 </pre>
 
             </div>
