@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link as LINK } from 'react-router-dom';
 import "./styles/Profile.css";
 
 function Profile() {
@@ -101,20 +102,35 @@ function Profile() {
           </h1>
           <div className="profile-info px-5">
             <div className="row text-center mt-4 px-1 skills">
-              <div className="col"><h1><i className="fa-brands fa-linkedin" style={{ color: "#0077B5" }}></i></h1>
-                <p>LinkedIn</p>
+              <div className="col">
+                <LINK to={'https://www.linkedin.com/in/hemant-dabhade-768b08285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} target="_blank" className='text-light text-decoration-none'>
+                    <h1><i className="fa-brands fa-linkedin" style={{ color: "#0077B5" }}></i></h1>
+                    <p>LinkedIn</p>
+                </LINK>
+              </div> 
+              <div className="col">
+                <a href="mailto:hemantrdabhade21@gmail.com" className='text-light text-decoration-none'>
+                  <h1><i className="fa-regular fa-envelope" style={{ color: "#d15656ff" }}></i></h1>
+                  <p>Mail</p>
+                </a>
               </div>
-              <div className="col"><h1><i className="fa-regular fa-envelope" style={{ color: "#d15656ff" }}></i></h1>
-                <p>Mail</p>
+              <div className="col">
+                <LINK to={'https://discord.gg/TarjxEXdtX'} target="_blank" className='text-light text-decoration-none'>
+                  <h1><i className="fa-brands fa-discord" style={{ color: "#7289da" }}></i></h1>
+                  <p>Discord</p>
+                </LINK>
               </div>
-              <div className="col"><h1><i className="fa-brands fa-discord" style={{ color: "#7289da" }}></i></h1>
-                <p>Discord</p>
+              <div className="col">
+                <LINK to={'https://www.instagram.com/hemant.d14?igsh=ZTM3N3VnYm94MXVp'} target="_blank" className='text-light text-decoration-none'>
+                  <h1><i className="fa-brands fa-instagram instagram-icon"></i></h1>
+                  <p>Instagram</p>
+                </LINK>
               </div>
-              <div className="col"><h1><i className="fa-brands fa-instagram instagram-icon"></i></h1>
-                <p>Instagram</p>
-              </div>
-              <div className="col"><h1><i className="fa-brands fa-youtube" style={{ color: "#f31212ff" }}></i></h1>
-                <p>YouTube</p>
+              <div className="col">
+                <LINK to={'https://youtube.com/@learnpracticencode?si=QFVgES47FJ2qBx0w'} target="_blank" className='text-light text-decoration-none'>
+                  <h1><i className="fa-brands fa-youtube" style={{ color: "#f31212ff" }}></i></h1>
+                  <p>YouTube</p>
+                </LINK>
               </div>
             </div>
           </div>
