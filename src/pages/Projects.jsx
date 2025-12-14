@@ -7,7 +7,7 @@ function Projects() {
         <i className="fa-solid fa-code me-2"></i> Project Page
       </h1>
 
-      <pre className="mx-4 fs-5">
+      <pre className="mx-4 text-wrap fs-5">
         <i class="fa-solid fa-circle-info text-info"></i> Data here is currently unavailable.
         Till then visit 👉🏻 <a className="text-decoration-none text-light" href="/profile"><strong>Profile</strong></a>
       </pre>
