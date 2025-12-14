@@ -15,7 +15,7 @@ function Profile() {
         {/* PROFILE CARD */}
         <div className="container profile-page bg-dark text-light py-4 mb-2 rounded">
           <h1 className="mx-4 pb-4">
-            <i className="fa-regular fa-user me-2"></i> Profile
+            <i className="fa-solid fa-user me-2"></i> Profile
           </h1>
 
           <div className="profile-details d-flex gap-4 mt-5 mx-5">
