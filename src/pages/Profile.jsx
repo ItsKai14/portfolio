@@ -98,7 +98,7 @@ function Profile() {
         {/* CONTACT CARD */}
         <div className="profile-page bg-dark text-light py-4 mb-2 rounded">
           <h1 className="mx-4 mb-2 pb-4">
-            <i className="fa-solid fa-phone me-2"></i> Contact Me
+            <i className="fa-solid fa-comments me-2"></i> Socials
           </h1>
           <div className="profile-info px-5">
             <div className="row text-center mt-4 px-1 skills">
