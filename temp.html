@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .about-section {
+            padding: 4rem 1.5rem;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            gap: 2.5rem;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+            align-items: center;
+        }
+
+        .about-avatar-wrapper {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin-bottom: 1rem;
+        }
+
+        .about-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 3px solid #22d3ee;
+            /* accent */
+            box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+        }
+
+        .about-verified {
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+            background: #020617;
+            border-radius: 999px;
+            padding: 4px;
+            border: 2px solid #22d3ee;
+            color: #22d3ee;
+            font-size: 0.8rem;
+        }
+
+        .about-name {
+            margin: 0;
+        }
+
+        .about-role {
+            margin: 0.25rem 0 1rem;
+            opacity: 0.8;
+        }
+
+        .about-tags {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .about-tags li {
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            background: rgba(148, 163, 184, 0.1);
+            font-size: 0.8rem;
+        }
+
+        .about-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <!-- Left: profile + quick facts -->
+            <div class="about-left">
+                <div class="about-avatar-wrapper">
+                    <img src="./public/My_PFP.jpg" alt="CodeDotExe" class="about-avatar" />
+                    <span class="about-verified">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                </div>
+
+                <h2 class="about-name">CodeDotExe</h2>
+                <p class="about-role">Full Stack Developer (MERN)</p>
+
+                <ul class="about-tags">
+                    <li>MERN Stack</li>
+                    <li>Discord Bots</li>
+                    <li>Minecraft Tools</li>
+                    <li>Content Creator</li>
+                </ul>
+            </div>
+
+            <!-- Right: about text -->
+            <div class="about-right">
+                <h3 class="about-title">
+                    <i class="fa-solid fa-user"></i>
+                    About Me
+                </h3>
+
+                <p>
+                    I’m <strong>CodeDotExe</strong>, a self-taught Full Stack Developer focused on building web apps
+                    and tools with the MERN stack. I enjoy turning ideas into usable products, from simple
+                    dashboards and APIs to utilities for games and online communities.
+                </p>
+
+                <p>
+                    Most of my projects use <strong>React</strong>, <strong>Node.js</strong>,
+                    <strong>Express</strong>, and <strong>MongoDB</strong>, and I also experiment with
+                    <strong>Discord bots</strong>, <strong>Minecraft servers/plugins</strong>, and small
+                    automation scripts. I like clean, minimal UIs, readable code, and shipping things that people
+                    actually use.
+                </p>
+
+                <p>
+                    Right now, I’m looking for <strong>Full Stack internship</strong> opportunities where I can
+                    contribute to real-world projects, learn from experienced developers, and grow my skills
+                    around JavaScript, backend architecture, and developer tooling.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

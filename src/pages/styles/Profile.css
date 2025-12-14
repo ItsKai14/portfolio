@@ -1,0 +1,162 @@
+/* Existing profile container behavior */
+.profile {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.profile::-webkit-scrollbar {
+  display: none;
+}
+
+/* Profile picture (kept your styles, responsive via media queries) */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 3px solid #22D3EE;
+  box-shadow: 0 4px 12px #22d3ee7a;
+}
+
+/* Page wrapper */
+.profile-page {
+  max-width: 100%;
+}
+
+/* Layout for large screens: row */
+.profile-details {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+/* Contact icons base size */
+.contact-icons h1 i {
+  font-size: 2.5rem;
+}
+
+/* Tagline: prevent horizontal scroll */
+.profile-tagline {
+  white-space: normal;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+/* ---------- BIO DESKTOP vs MOBILE ---------- */
+
+/* Desktop/tablet: show inline bio, hide mobile button */
+.bio-desktop {
+  display: block;
+}
+
+.bio-mobile {
+  display: none;
+}
+
+/* Modal backdrop (hidden by default, enabled only on small screens) */
+.bio-modal-backdrop {
+  display: none;
+}
+
+/* Color Gradient for Instagram Icon */
+.instagram-icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+/* Tablets and below */
+@media (max-width: 992px) {
+  .profile-details {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0 0 0;
+  }
+
+  .profile-info {
+    margin-top: 1.5rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .profile-page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+  .profile-page {
+    padding: 0;
+  }
+
+  .profile-details {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .profile h3 {
+    margin-top: 0;
+    font-size: 1.75rem;
+  }
+
+  .contact-icons h1 i {
+    font-size: 2rem;
+  }
+
+  .contact-icons {
+    gap: 1.5rem;
+  }
+
+  /* 🔹 SMALL-SCREEN BIO BEHAVIOR */
+
+  /* Hide inline bio on small screens */
+  .bio-desktop {
+    display: none;
+  }
+
+  /* Show "View Bio" button */
+  .bio-mobile {
+    display: block;
+  }
+
+  /* Full-screen overlay for bio prompt */
+  .bio-modal-backdrop {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    justify-content: center;
+    align-items: flex-end; /* bottom-sheet style */
+    z-index: 1050;
+  }
+
+  .bio-modal {
+    width: 100%;
+    max-height: 60vh;
+    padding: 1.25rem 1.5rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+  }
+}
